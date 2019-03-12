@@ -712,7 +712,7 @@ please preview your site before committing, and make sure to run
       <li>Unzip the sqlite tools folder</li>
       <li>Move the files from the folder <code>sqlite-tools-win32-x86-3270200/</code> into <code>c:\sqlite</code></li>
       <li>Start Git Bash</li>
-      <li>Copy the following line, and paste it into the window git bash opened. (If you are unsure, ask an instructor for help) <code>echo 'export $PATH=$PATH:/c/sqlite' >> $HOME/.bashrc ; source .bashrc</code> </li>
+      <li>Copy the following line, and paste it into the window git bash opened. (If you are unsure, ask an instructor for help) <code>echo 'export PATH=$PATH:/c/sqlite' >> $HOME/.bash_profile ; source .bash_profile</code> </li>
       <li>Type <code>sqlite3 --version</code> You should see <code>3.27.02</code></li>
       </ul>
 
