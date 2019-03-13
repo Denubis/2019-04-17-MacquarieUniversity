@@ -431,13 +431,13 @@ please preview your site before committing, and make sure to run
     </ul>
 
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="git-windows">
+      <article role="tabpanel" class="tab-pane" id="git-windows">
         <p>
           Git should be installed on your computer as part of your Bash
           install (described above).
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="git-macos">
+      <article role="tabpanel" class="tab-pane" id="git-macos">
         <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
         <p>
           <strong>For OS X 10.9 and higher</strong>, install Git for Mac
@@ -453,7 +453,7 @@ please preview your site before committing, and make sure to run
           <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="git-linux">
+      <article role="tabpanel" class="tab-pane" id="git-linux">
         <p>
           If Git is not already available on your machine you can try to
           install it via your distro's package manager. For Debian/Ubuntu run
@@ -501,7 +501,7 @@ please preview your site before committing, and make sure to run
           Please ask your instructor to help you do this.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-macos">
+      <article role="tabpanel" class="tab-pane" id="editor-macos">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
           See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
@@ -514,7 +514,7 @@ please preview your site before committing, and make sure to run
           <a href="https://www.sublimetext.com/">Sublime Text</a>.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-macos">
+      <article role="tabpanel" class="tab-pane" id="editor-linux">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
           It should be pre-installed.
@@ -698,34 +698,39 @@ please preview your site before committing, and make sure to run
       <li role="presentation" class="active"><a data-os="windows" href="#sql-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#sql-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
       <li role="presentation"><a data-os="linux" href="#sql-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+      <li role="presentation"><a data-os="Web" href="#sql-web" aria-controls="Linux" role="tab" data-toggle="tab">Web</a></li>
     </ul>
 
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="sql-windows">
         <p>
           <ul>
-            <li>Make a directory at <code>c:\sqlite</code></li>
-            <li>
-              <a href="https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip">Download the sqlite3 tools zipfile
+            <li>Run git-bash from the start menu</li>
+            <li>Copy the following <code>mkdir -p ~/bin/ && wget https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip && unzip sqlite-tools-win32-x86-3270200.zip && mv sqlite-tools-win32-x86-3270200/* ~/bin/ && echo 'export PATH="$PATH:$HOME/bin" >> .bash_profile && source .bash_profile && sqlite3 --version</code></li>
+            <li>You should see <code>3.27.02 2019...</code></li>
+          </ul>
             
-    </a></li>
-      <li>Unzip the sqlite tools folder</li>
-      <li>Move the files from the folder <code>sqlite-tools-win32-x86-3270200/</code> into <code>c:\sqlite</code></li>
-      <li>Start Git Bash</li>
-      <li>Copy the following line, and paste it into the window git bash opened. (If you are unsure, ask an instructor for help) <code>echo 'export PATH=$PATH:/c/sqlite' >> $HOME/.bash_profile ; source .bash_profile</code> </li>
-      <li>Type <code>sqlite3 --version</code> You should see <code>3.27.02</code></li>
-      </ul>
 
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-macos">
+      <article role="tabpanel" class="tab-pane" id="sql-macos">
         <p>
           SQLite comes pre-installed on macOS.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-linux">
+      <article role="tabpanel" class="tab-pane" id="sql-linux">
         <p>
           SQLite comes pre-installed on Linux.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="sql-web">
+        <p>
+          <ul>
+            <li>In case of problems: register for an account at <a href="http://pythonanywhere.com/">Python Anywhere</a></li>
+            <li>Download <a href="http://swcarpentry.github.io/sql-novice-survey/files/survey.db">survey.db</a></li>
+            <li>Click on files and upload survey.db</li>
+            <li>Click on dashboard and Choose new console <code>$ bash</code></li>
+            </ul>
         </p>
       </article>
     </div>
