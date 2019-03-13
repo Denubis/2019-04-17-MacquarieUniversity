@@ -706,10 +706,9 @@ please preview your site before committing, and make sure to run
         <p>
           <ul>
             <li>Run git-bash from the start menu</li>
-            <li>Copy the following <code>mkdir -p ~/bin/ && wget https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip \ <br> && unzip sqlite-tools-win32-x86-3270200.zip && mv sqlite-tools-win32-x86-3270200/* ~/bin/ \ <br>
-              && echo 'export PATH="$PATH:$HOME/bin" >> .bash_profile && source .bash_profile && sqlite3 --version</code></li>
+            <li>Copy the following <code>curl {{site.url}}/getsql.sh | bash</code></li>
             <li>Paste it into the window that git bash opened. If you're unsure, ask an instructor for help</li>
-            <li>You should see <code>3.27.02 2019...</code></li>
+            <li>You should see <code>3.27.2 2019-02-25 16:06:06 bd49a8271d650fa89e446b42e513b595a717b9212c91dd384aab871fc1d0f6d7</code></li>
           </ul>
             
 
