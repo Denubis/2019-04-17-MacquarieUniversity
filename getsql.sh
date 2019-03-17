@@ -1,7 +1,8 @@
 #!/bin/bash
 set -euo pipefail
-
-if command -v apt-get >/dev/null 2>&1 ; then
+if command -v sqlite3 --version; then
+	echo "SQLite is already installed!"
+elif command -v apt-get >/dev/null 2>&1 ; then
 	sudo apt-get install sqlite3
 elif  command -v unzip >/dev/null 2>^1 ; then
 	mkdir -p ~/bin
